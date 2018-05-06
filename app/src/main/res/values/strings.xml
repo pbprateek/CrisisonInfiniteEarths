@@ -15,14 +15,56 @@
     <string name="barcode_error">"Error reading barcode: %1$s"</string>
 
 
-    <string name="qr1">ab</string>
-    <string name="qr2">cd</string>
-    <string name="qr3">ef</string>
-    <string name="qr4">gh</string>
-    <string name="qr5">ij</string>
-    <string name="qr6">kl</string>
-    <string name="qr7">mn</string>
-    <string name="qr8">op</string>
+    <string name="qr1">arfstr01</string>
+    <string name="qr2">bsfstr02</string>
+    <string name="qr3">ctfstr03</string>
+    <string name="qr4">dufstr04</string>
+    <string name="qr5">dmar1</string>
+    <string name="qr6">arslwr01</string>
+    <string name="qr7">bsslwr02</string>
+    <string name="qr8">ctslwr03</string>
+    <string name="qr9">duslwr04</string>
+    <string name="qr10">bns000</string>
+    <string name="qr11">dmmar3</string>
+
+   <!-- <string name="qr1">bsfstr02</string>
+    <string name="qr2">dufstr04</string>
+    <string name="qr3">arfstr01</string>
+    <string name="qr4">ctfstr03</string>
+    <string name="qr5">dmar1</string>
+    <string name="qr6">bsslwr02</string>
+    <string name="qr7">duslwr04</string>
+    <string name="qr8">arslwr01</string>
+    <string name="qr9">ctslwr03</string>
+    <string name="qr10">bns000</string>
+    <string name="qr11">dmmar3</string> -->
+
+
+  <!-- <string name="qr1">ctfstr03</string>
+    <string name="qr2">arfstr01</string>
+    <string name="qr3">dufstr04</string>
+    <string name="qr4">bsfstr02</string>
+    <string name="qr5">dmar1</string>
+    <string name="qr6">ctslwr03</string>
+    <string name="qr7">arslwr01</string>
+    <string name="qr8">duslwr04</string>
+    <string name="qr9">bsslwr02</string>
+    <string name="qr10">bns000</string>
+    <string name="qr11">dmmar3</string> -->
+
+  <!-- <string name="qr1">dufstr04</string>
+    <string name="qr2">ctfstr03</string>
+    <string name="qr3">bsfstr02</string>
+    <string name="qr4">arfstr01</string>
+    <string name="qr5">dmar1</string>
+    <string name="qr6">duslwr04</string>
+    <string name="qr7">ctslwr03</string>
+    <string name="qr8">bsslwr02</string>
+    <string name="qr9">arslwr01</string>
+    <string name="qr10">bns000</string>
+    <string name="qr11">dmmar3</string> -->
+
+
 
 
 </resources>

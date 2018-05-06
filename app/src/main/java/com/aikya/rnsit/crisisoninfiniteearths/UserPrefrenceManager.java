@@ -10,7 +10,9 @@ public class UserPrefrenceManager {
 
 
     private static String POSITION="position";
-    private static String LIST_NO="list_no";
+    private static String TIME0="time0";
+    private static String TIME1="time1";
+    private static String TIME2="time2";
 
     private static void init(Context mContext) {
         mSharedPreferences = mContext.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
@@ -26,26 +28,8 @@ public class UserPrefrenceManager {
         mShEditor.putInt(POSITION,pos);
         mShEditor.commit();
     }
-    public static void setupListNo(Context mContext,
-                                     int listNo){
-        if(mSharedPreferences==null){
-            init(mContext);
-        }
-        SharedPreferences.Editor mShEditor=mSharedPreferences.edit();
-
-        mShEditor.putInt(LIST_NO,listNo);
-        mShEditor.commit();
-    }
 
 
-    public static void logout(Context mContext){
-        if(mSharedPreferences==null){
-            init(mContext);
-        }
-        SharedPreferences.Editor mSEditor=mSharedPreferences.edit();
-        mSEditor.clear();
-        mSEditor.commit();
-    }
 
 
     public static int getPosition(Context mContext){
@@ -56,14 +40,73 @@ public class UserPrefrenceManager {
         pos=mSharedPreferences.getInt(POSITION,0);
         return pos;
     }
-
-    public static int getListNo(Context mContext){
-        int listNo;
+    public static void setupTimeVillain(Context mContext,
+                                     String time){
         if(mSharedPreferences==null){
             init(mContext);
         }
-        listNo=mSharedPreferences.getInt(LIST_NO,-1);
-        return listNo;
+        SharedPreferences.Editor mShEditor=mSharedPreferences.edit();
+
+        mShEditor.putString(TIME1,time);
+        mShEditor.commit();
+    }
+
+
+
+
+    public static String getTimeVillain(Context mContext){
+        String time;
+        if(mSharedPreferences==null){
+            init(mContext);
+        }
+        time=mSharedPreferences.getString(TIME1,"0");
+        return time;
+    }
+
+    public static void setupTimeBonus(Context mContext,
+                                        String time){
+        if(mSharedPreferences==null){
+            init(mContext);
+        }
+        SharedPreferences.Editor mShEditor=mSharedPreferences.edit();
+
+        mShEditor.putString(TIME2,time);
+        mShEditor.commit();
+    }
+
+
+
+
+    public static String getTimeBonus(Context mContext){
+        String time;
+        if(mSharedPreferences==null){
+            init(mContext);
+        }
+        time=mSharedPreferences.getString(TIME2,"0");
+        return time;
+    }
+
+    public static void setupTimeHero(Context mContext,
+                                        String time){
+        if(mSharedPreferences==null){
+            init(mContext);
+        }
+        SharedPreferences.Editor mShEditor=mSharedPreferences.edit();
+
+        mShEditor.putString(TIME0,time);
+        mShEditor.commit();
+    }
+
+
+
+
+    public static String getTimeHero(Context mContext){
+        String time;
+        if(mSharedPreferences==null){
+            init(mContext);
+        }
+        time=mSharedPreferences.getString(TIME0,"0");
+        return time;
     }
 
 }

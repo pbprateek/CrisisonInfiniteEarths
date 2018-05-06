@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        app:backgroundTint="#424242"
+        app:backgroundTint="#6A1B9A"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_camera_alt_white_24px" />
 
